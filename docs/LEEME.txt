@@ -1,0 +1,269 @@
+CAZADORES DE ARENA - Versión de Roblox (Cumbres del Inti: Amaru y Apu Rumi)
+=============================================================
+
+ABRIRLO
+1. Instala Roblox Studio (gratis) e inicia sesión con tu cuenta.
+2. Abre el archivo CazadoresDeArena.rbxl (doble clic, o en Studio: File > Open from File).
+3. La primera vez tarda unos segundos en construir el desierto.
+
+PROBARLO
+- Sola: pestaña "Test" > botón "Play". Apareces en el campamento con tu avatar y el atuendo nómada.
+- Con varias jugadores en tu computador: pestaña "Test", en "Clients and Servers" elige
+  "2 Players" (o más) y pulsa "Start". Se abren varias ventanas, una por jugador.
+
+CONTROLES (mando o teclado)
+- Mover: stick izq. / WASD          - Cámara: stick der. / ratón
+- Ataque: X / clic izq.              - Ataque fuerte: Y / clic der.
+- Saltar: A / Espacio                - Esquivar (rodar): B / Ctrl izquierdo
+- Poción: cruceta arriba / R
+- Correr: L3 / Shift
+- En la pantalla de resultados: A o Enter para seguir cazando.
+
+MENÚ DEL CAZADOR (M en el teclado, Select en el mando)
+- Arriba: tu nivel y la experiencia. Cada cacería da experiencia (más si la completas, si el
+  Behemoth es difícil y por cada parte rota). Cada nivel da +2 de vida máxima (nivel máx. 30).
+- Bestiario: isla, naturaleza, descripción, partes y sus materiales, tus cazas, tu récord y
+  el récord global (el global se guarda con el juego publicado o con el acceso a la API
+  activado en Studio: Game Settings > Security > Enable Studio Access to API Services).
+- Inventario: combina armas y armaduras (en el Refugio) y ve tus atributos a la derecha.
+
+SONIDOS
+- Cada arma y cada Behemoth tiene sus propios sonidos. Por ahora usan sonidos que vienen con
+  Roblox en tonos distintos. Para cambiarlos por otros: abre ReplicatedStorage > Compartido >
+  Sonidos, busca en el Toolbox > Audio un sonido gratuito (por ejemplo "roar", "sword swing",
+  "laser"), copia su ID y ponlo en la tabla como "rbxassetid://NUMERO".
+
+COLORES DEL DAÑO
+- Blanco: daño normal · Amarillo: daño a una parte rompible · Cian: golpe a una zona herida
+- Verde: golpe que aturde (llena la barra de derribo) · Naranja: quemadura · Morado: veneno
+
+CELULAR Y TABLET
+- En pantallas táctiles aparecen botones de ATAQUE, FUERTE, ESQUIVAR, POCIÓN y CORRER (en la
+  cacería) y un botón de MENÚ arriba a la izquierda. Moverse, saltar y girar la cámara usan los
+  controles de Roblox (joystick y arrastrar con el dedo).
+- Las ventanas se achican solas si no caben en la pantalla, y la vida y el aguante se ven
+  arriba a la izquierda. Para probarlo en Studio: pestaña Test > Device (elige un celular).
+
+FLORA Y FAUNA
+- Mar de Dunas: cactus, arbustos, piedras, ondas de arena, esqueletos; camellos, jerbos,
+  escorpiones y lagartijas. Cumbres: ichu, cantutas, puyas; llamas, vizcachas y cóndores.
+  Refugio: macetas, flores, enredaderas; gatos, palomas y peces en el oasis.
+
+SERVIDORES DE CACERÍA (grupos de hasta 4)
+- Con Tariq eliges isla y Behemoth: "Cazar solo" o "Crear grupo". Otros cazadores se unen desde
+  la lista de grupos; el líder pulsa "¡Salir de caza!" y el grupo viaja a su propio servidor.
+- Para activarlo en el juego publicado (en Studio todo sigue en un solo servidor):
+  1. En create.roblox.com abre tu juego > Places (Lugares) > crea un lugar nuevo "Cacería".
+  2. En Studio: File > Publish to Roblox As... > elige tu juego > publica ESTE MISMO archivo
+     en el lugar nuevo "Cacería" (el Refugio sigue siendo tu lugar principal).
+  3. Copia los dos números (PlaceId) de la página de cada lugar y ponlos en
+     ReplicatedStorage > Compartido > Servidores (LOBBY = el principal, CACERIA = el nuevo).
+  4. Vuelve a publicar el archivo en los DOS lugares (siempre que cambies algo, en ambos).
+  5. En la configuración del lugar "Cacería", pon el máximo de jugadores en 4.
+
+MISIONES
+- Imani cuenta la historia (7 capítulos) y Sefu da encargos repetibles (hasta 2 activos).
+  Se cumplen solos al terminar una cacería y dan monedas, materiales y experiencia.
+
+LAS ISLAS
+- Tariq (en el Refugio) muestra las islas a la izquierda y, al elegir una, sus Behemoths.
+- Mar de Dunas: Sekhmaur y Kheprak. Cumbres del Inti: Amaru y Apu Rumi.
+- Todas las cacerías salen del Refugio de Qamar y vuelven a él.
+
+AMARU, LA SERPIENTE ALADA (elemento Sombra, Cumbres del Inti)
+- Ataques: mordida, latigazo, enroscarse (sal del círculo), planeo, rayo de sombra, lluvia de
+  plumas, nube de sombra (oscurece tu pantalla) y hundirse en las sombras para salir por detrás.
+- Partes: cuernos lunares, alas y cresta. Al romper la cresta (o a media vida) se abre el eclipse.
+- Armas de Sombra: Filo del Eclipse (marcas de sombra), Martillo del Uku Pacha (pozo de sombra),
+  Alas de Amaru (plumas en círculo), Lanza del Uku Pacha (te cura) y Blásteres del Eclipse (orbe).
+- Set del Eclipse: 2 piezas = la nube no te ciega y Amaru te hace menos daño;
+  4 piezas = Paso de Sombra tras una esquiva perfecta.
+
+APU RUMI, EL GUARDIÁN DE LA MONTAÑA (elemento Sol, Cumbres del Inti)
+- Gorila de piedra: puñetazo, carga, lanzar una roca, salto, golpe de pecho (empuja y aturde)
+  y, con la piedra agrietada, un rayo de sol desde el disco del pecho.
+- Partes: disco solar (su punto débil; recibe 50% más daño agrietado), puños y la nieve de los
+  hombros. Al romper la nieve (o a media vida) la luz sale por las grietas.
+- Armas del Sol: Filo del Inti (destello), Puño del Apu (terremoto), Hoces de Granito
+  (esquirlas), Lanza del Sol Naciente (pilar de piedra) y Blásteres del Inti (abanico de rayos).
+- Set del Apu: 2 piezas = rompes partes más rápido; 4 piezas = Piel de Piedra.
+
+LOS BEHEMOTHS
+- Sekhmaur y Kheprak recorren el Mar de Dunas a la vez. Con Tariq eliges a cuál cazar:
+  arriba verás su retrato, su vida y sus partes.
+- Kheprak: pinza, embestida, salto y su bola solar. Rompe la bola mientras la carga
+  (o golpea sus patas traseras) y cae boca arriba. Si ya la soltó, llévala contra una
+  pirámide, una roca o un obelisco.
+- Sekhmaur: toda su cola (apoyada en el suelo) cuenta como el aguijón, y toda su cabeza
+  cuenta como la melena hasta que despierta el guardián.
+
+PODERES DE LAS ARMAS FORJADAS
+- Colmillo del Guardián: tras una esquiva perfecta, el siguiente golpe lanza una ola de arena.
+- Martillo de la Esfinge: el golpe fuerte crea arenas movedizas que lo frenan.
+- Hoces del Remolino: los giros dejan un remolino que sigue golpeando.
+- Lanza de Serket: las heridas envenenan.
+- Blásteres del Sol Dorado: el disparo cargado es un rayo que atraviesa 3 partes.
+- Mandíbula del Rodador: acumula calor; lleno, el golpe fuerte estalla en llamas.
+- Martillo del Sol Rodante: el golpe fuerte suelta una mini bola solar.
+- Pinzas del Escarabajo: los giros dejan una línea de fuego.
+- Cuerno de Hércules: el ataque fuerte es una embestida con heridas ardientes.
+- Blásteres de Brasa: los disparos queman; el cargado es una bola de fuego.
+
+EL REFUGIO DE QAMAR
+- Después de crear tu cazador llegas al Refugio. Acércate a alguien y pulsa E (o el botón
+  que muestre el aviso en el mando) para hablar.
+- Nefra (herrería, este): en "Mis armas" eliges el arma que llevarás (en la cacería no se
+  cambia); en las demás pestañas forjas armas y armaduras de Sekhmaur y Kheprak.
+  En Studio tiene un botón de "materiales de prueba" para probar la forja sin cazar.
+- Tariq (puerta sur): te lleva al Mar de Dunas. Para volver: botón "Volver al Refugio" en
+  los resultados, o la caravana del campamento.
+- Al cazar a Sekhmaur, cada cazador recibe monedas, escamas, núcleos y un material por
+  cada parte rota. Todo se guarda al publicar el juego.
+
+CREADOR DE PERSONAJE
+- Al entrar, cada jugador aparece en el probador y crea su cazador: pelo, color de pelo,
+  piel, ojos, color de ojos, boca, ropa y extras. Todas tienen el mismo cuerpo de bloques,
+  así las animaciones y las armas se ven siempre bien.
+- Mando: cruceta ↑↓ elige, ←→ cambia, LB/RB giran la cámara, A termina.
+  Teclado: flechas o WASD, Q/E para girar, Enter termina. También con el ratón.
+- Al publicar el juego, la apariencia se guarda en la nube (Game Settings > Security >
+  "Enable Studio Access to API Services" para que también funcione al probar en Studio).
+
+ESTILO VOXEL
+- Todo el mundo está hecho de bloques de 4 studs, como en Cube World o Veloren.
+- El cazador sube solo un escalón de un bloque al caminar.
+
+ANIMACIONES DE LAS CAZADORS
+- Las 15 animaciones (ataques de las 5 armas, rodada y golpe recibido) ya vienen dentro del
+  juego en ReplicatedStorage > Animaciones, en versión R6 y R15. El juego usa la que
+  corresponda al avatar de cada jugador. No hace falta publicarlas.
+- Para retocar una: copia su KeyframeSequence dentro de la carpeta AnimSaves de un Rig,
+  ábrela en el Clip Editor (… > Load), edítala y guárdala (… > Save). Luego cópiala de vuelta
+  a ReplicatedStorage > Animaciones > R6 o R15 con el mismo nombre.
+
+QUÉ TRAE ESTA ETAPA
+- El Mar de Dunas: dunas, oasis con agua y palmeras, 3 pirámides, obeliscos con jeroglíficos,
+  rocas y el campamento con fogata (zona segura: repone las pociones).
+- Las 5 armas base con sus combos, ataque fuerte, blásteres con calor, aguante, esquiva
+  con invulnerabilidad y 3 pociones.
+- Muñeco de práctica junto al campamento.
+- Sekhmaur completo: patrulla, bebe en el oasis, ruge, 7 ataques con zonas rojas,
+  melena, tocado y aguijón rompibles, heridas de lanza, derribos, furia y la segunda fase
+  del guardián con el cielo del atardecer. Los buitres siempre vuelan sobre él.
+- El indicador estilo Dauntless: retrato en un aro y corazón que se vacía.
+- Cooperativo: Sekhmaur persigue a el cazador más cercana y su vida sube con más jugadores.
+  3 desmayos del grupo = cacería fracasada.
+
+JUGAR CON AMIGAS POR INTERNET
+1. En Studio: File > Publish to Roblox. Ponle nombre y descripción.
+2. Home > Game Settings > Permissions: cambia a "Public" (o deja privado e invita amigos).
+3. Tus amigos lo abren desde tu perfil de Roblox. Roblox pone los servidores.
+
+EDITAR EL CÓDIGO (opcional)
+La carpeta "src" tiene todo el código en Luau. Con Rojo (rojo.space) puedes editarlo en
+VS Code y verlo en Studio al instante. Si prefieres, edita los scripts directamente en Studio:
+ReplicatedStorage > Compartido, ServerScriptService > Servidor, StarterPlayerScripts > Cliente.
+
+DISEÑO DE ARMAS Y ARMADURAS (según la imagen de referencia de los cuatro sets)
+- Armaduras de cuerpo completo hechas de placas (casco, hombreras, peto, faldones, botas) en cubitos
+  de 0,2 studs: Guardián (oro con juntas, azul y cian), Rodador (placas negras con vetas de lava y
+  corona de llamas), Eclipse (negro y violeta con venas de energía y cresta de púas) y Apu (piedra
+  gris, bloques de oro y hielo). Cada jugador las construye y oculta en su pantalla el cuerpo que
+  queda debajo, para que no se asome entre las placas.
+- Las 48 armas de los Behemoths: núcleo oscuro, borde que brilla en degradado y canal central
+  brillante (Compartido > ArteArmas), y cada una con su propia forma (ver más abajo). Las 6 armas
+  iniciales no cambian.
+- Proporciones del cazador: piernas de 2,6 y brazos de 2,4 studs (más altos, como en la imagen).
+
+
+LA SELVA DE OBSIDIANA · 1: CAMAZOTZ (Templo de Xibalbá)
+- Isla nueva "xibalba": plaza empedrada con altar de jade, gran pirámide escalonada con su templo,
+  dos templetes, cancha del juego de pelota, estelas con glifos, braseros, ceibas gigantes, selva,
+  hongos que brillan, luciérnagas, búhos y murciélagos. Noche de luna; en la fase 2 el cielo se
+  pone rojo ("Noche de Xibalbá").
+- Camazotz: camina sobre sus alas, con las orejas enormes, la hoja nasal y adornos de oro y jade.
+  Ataques: zarpazo, mordida que lo cura, grito en línea que aturde, onda en círculo, picada desde
+  el aire y (fase 2) enjambre de murciélagos que bajan en picada sobre círculos rojos.
+  Partes: orejas (grita más débil), alas (ya no vuela) y colmillos (la mordida ya no lo cura).
+- 6 armas de Camazotz con poderes (onda sónica, tambor que derriba, murciélagos, estocada que
+  atraviesa, disparos que rebotan, garras que curan) y el Set de Xibalbá con bonos de 2 y 4 piezas.
+- La forja de Nefra ahora tiene una pestaña por Behemoth (armas + armadura + bonos) y Tariq una
+  lista de islas que se desplaza.
+- Código: servidor > BehemothSelva (base común de los 4), Camazotz, MapaSelva;
+  cliente > AnimSelva; compartido > PosesSelva.
+
+
+LA SELVA DE OBSIDIANA · 2: XOLOTL (Cenote Sagrado)
+- Isla nueva "cenote": un cenote redondo de piedra blanca con escalinata y nenúfares, un risco con
+  cascada, dos cabezas de piedra de Tláloc, estelas, ceibas, luciérnagas y lluvia constante.
+- Xolotl, el ajolote de la tormenta: branquias en corona que brillan, anteojeras de Tláloc y una
+  aleta que se transparenta. Ataques: mordida, coletazo, chorro de agua en línea, se sumerge y sale
+  bajo tus pies (sigue el círculo rojo), lluvia de rayos sobre los cazadores y panzazo. Si dejas de
+  golpearlo unos segundos se regenera. Fase 2 "Tormenta de Tláloc": el cielo se oscurece y caen
+  rayos sueltos (círculo amarillo).
+  Partes: branquias (ya no llama rayos ni tormenta y se cura menos), cola y aleta del lomo (ya no
+  se sumerge). Al salir del agua deja la panza expuesta.
+- Armas: Macuahuitl del Trueno (rayo en el golpe fuerte), Atlatl de Tormenta (jabalina eléctrica),
+  Branquias del Ajolote (los giros te curan), Mazo de Tláloc (charco electrificado), Blásteres del
+  Cenote (rayo en cadena) y Puños de Tormenta (estática que se descarga).
+- Set de Tláloc: 2 piezas = 20% menos daño de Xolotl; 4 piezas = cada 10 golpes cae un rayo.
+
+LA SELVA DE OBSIDIANA · 3: BALAM (Selva de Obsidiana)
+- Isla nueva "selva": selva cerrada con senderos, un templo del jaguar en lo alto, dos cabezas de
+  jaguar en la entrada, columnas caídas, cristales de obsidiana y hongos que brillan.
+- Balam, el jaguar de obsidiana: pelaje negro con manchas de jade y garras violeta.
+  Ataques: zarpazo y mordida que te hacen sangrar, salto en arco sobre su presa, carrera en zigzag,
+  rugido que aturde y coletazo. Fase 2 "Camuflaje de jade": por momentos se vuelve casi invisible
+  y solo se le ven las manchas. Tras el salto queda expuesto.
+  Partes: garras y colmillos (ya no hacen sangrar) y cola.
+- Armas: Filo de Obsidiana (sangrado), Lanza del Cazador Nocturno (golpe doble tras esquiva
+  perfecta), Garras de Balam (cortes en abanico), Mazo del Jaguar (púas del suelo), Blásteres de
+  Jade (astillas) y Zarpas de Obsidiana (desgarro).
+- Set del Jaguar: 2 piezas = 20% menos daño de Balam; 4 piezas = +20% de daño 5 s tras una
+  esquiva perfecta.
+
+LA SELVA DE OBSIDIANA · 4: CIPACTLI (Pantanos de Aztlán)
+- Isla nueva "pantano": barro, canales de agua verde, manglares, juncos, chinampas con flores y un
+  templo doble (rojo y azul) al fondo.
+- Cipactli, el caimán de la creación: placas en el lomo que brillan y mandíbula enorme. Ataques:
+  embestida con las fauces abiertas, giro de la muerte, coletazo, emboscada desde el barro (sale
+  bajo tus pies) y géiseres de lodo que te frenan. Fase 2 "Fauces de la Creación": se abren bocas
+  en sus patas que muerden a los lados. Tras el giro queda expuesto.
+  Partes: placas del lomo, mandíbula (todas sus mordidas pierden fuerza) y cola.
+- Armas: Diente de Cipactli (muerde dos veces), Arpón del Abismo (herida y lo frena), Hoces de la
+  Creación (remolino de agua), Mazo del Pantano (lodazal), Blásteres del Abismo (géiser) y Fauces
+  del Caimán (cada cuarto golpe muerde).
+- Set de Cipactli: 2 piezas = 20% menos daño de Cipactli; 4 piezas = al bajar del 30% de vida te
+  curas 35 (una vez por minuto).
+
+ARREGLOS DE ESTA VERSIÓN
+- La esquiva ahora tiene un límite en el servidor (aguante y espera mínima, igual que en tu
+  pantalla): nadie puede rodar sin parar para no recibir daño. Jugando normal no notas nada.
+- Si esquivas o bloqueas un golpe, ya no sangras ni te frenas por él. El sangrado no se esquiva
+  rodando.
+- Los charcos, remolinos y lodazales dejan de dañar si su cazador sale del juego.
+- La tormenta de Xolotl se calma al vencerlo o al romperle las branquias.
+
+ARMAS CON DISEÑO PROPIO
+Antes las armas de cada Behemoth compartían la misma forma y solo cambiaba el color. Ahora cada
+una de las 48 tiene su propia silueta, inspirada en su bestia (los poderes no cambian):
+- Sekhmaur: espada con colmillo de león y guarda de melena, lanza con aguijón de escorpión,
+  guadañas khopesh, martillo con cabeza de esfinge, bláster de sol alado y zarpas de león.
+- Kheprak: espada-mandíbula, lanza de cuernos de escarabajo hércules, guadañas de pata cavadora
+  con dientes, martillo de bola de sol en llamas, bláster con forma de escarabajo y nudillos con
+  cuernos encendidos.
+- Amaru: espada ondulada con capucha de cobra, lanza con un eclipse, guadañas de ala de plumas,
+  martillo de cabeza de serpiente con las fauces abiertas, bláster del eclipse y puños con
+  colmillos.
+- Apu Rumi: espada de losa de piedra con grieta de hielo, lanza del sol naciente, hoces de granito
+  con cristales de hielo, martillo de dos picos nevados, bláster de tres bocas y guanteletes de
+  piedra con cristales.
+- Camazotz: colmillo curvo con guarda de alas, aguja entre orejas de murciélago, ala de
+  murciélago con membrana, tambor de guerra, bláster con cabeza de murciélago y garras en gancho.
+- Xolotl: macuahuitl con navajas de obsidiana, dardo de atlatl con punta de rayo, abanico de
+  branquias, máscara de Tláloc, bláster de nube de tormenta y puños con rayos.
+- Balam: hoja de obsidiana tallada, lanza con luna y borla de jaguar, tres garras curvas, cabeza
+  de jaguar, cristales de jade y zarpas de obsidiana.
+- Cipactli: hoja dentada de pez sierra, arpón con púas, fauces con dientes, maza de cola de
+  caimán, hocico de caimán y mandíbulas en U.
+Los dibujos de todas las armas están en Compartido > ArteArmas.

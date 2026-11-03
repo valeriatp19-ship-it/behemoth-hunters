@@ -1,0 +1,44 @@
+{
+  "name": "BehemothHunters",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Compartido": {
+        "$path": "src/compartido"
+      },
+      "Animaciones": {
+        "$path": "animaciones/Animaciones.rbxm"
+      }
+    },
+    "ServerScriptService": {
+      "Servidor": {
+        "$path": "src/servidor"
+      }
+    },
+    "StarterPlayer": {
+      "$properties": {
+        "CameraMaxZoomDistance": 40,
+        "CameraMinZoomDistance": 8
+      },
+      "StarterPlayerScripts": {
+        "Cliente": {
+          "$path": "src/cliente"
+        }
+      }
+    },
+    "Players": {
+      "$properties": {
+        "RespawnTime": 5
+      }
+    },
+    "Lighting": {
+      "$properties": {
+        "ClockTime": 14.5,
+        "Brightness": 2,
+        "GlobalShadows": true,
+        "EnvironmentDiffuseScale": 0.4,
+        "EnvironmentSpecularScale": 0.2
+      }
+    }
+  }
+}

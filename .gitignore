@@ -1,0 +1,18 @@
+# builds de Rojo y de Studio
+*.rbxl
+*.rbxlx
+*.rbxl.lock
+*.rbxlx.lock
+sourcemap.json
+
+# imágenes y datos que generan las herramientas
+tools/**/*.png
+tools/**/*.json
+
+# Python
+__pycache__/
+*.pyc
+
+# sistema
+.DS_Store
+Thumbs.db
