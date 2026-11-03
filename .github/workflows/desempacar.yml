@@ -1,0 +1,21 @@
+name: Desempacar proyecto
+on:
+  push:
+    paths:
+      - proyecto.zip
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  desempacar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          unzip -o -q proyecto.zip
+          git rm -q proyecto.zip
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Add Behemoth Hunters project files" -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>" -m "Claude-Session: https://claude.ai/code/session_013TbPzcsE51bZJhfvqcKFJ1"
+          git push origin HEAD:${{ github.ref_name }}
